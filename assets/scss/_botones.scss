@@ -1,0 +1,35 @@
+.btn {
+    @include propiedadesPrincipales (auto, auto, $colorSecundario, $colorBlanco);
+    animation-name: mianimacion;
+    animation-duration:map-get($boton, duracionAnimacion);
+    animation-delay: map-get($boton, delayAnimacion);
+    position: map-get($boton, posicion);
+}
+.a {
+    @extend .btn;
+    text-decoration: map-get($boton, decoTexto);
+    animation-name: letrasAnimacion;
+}
+@keyframes mianimacion {  
+    0%{
+        background-color: $colorSecundario;
+    }
+    50%{
+        background-color: $colorPrimario; 
+        color:$colorNegro;
+    }
+    100%{
+        background-color: $colorSecundario;
+    }
+}
+@keyframes letrasAnimacion{
+    0% {
+        color: $colorBlanco;
+    }
+    50% {
+        color:$colorNegro;
+    }
+    100% {
+        color:$colorBlanco;
+    }
+}

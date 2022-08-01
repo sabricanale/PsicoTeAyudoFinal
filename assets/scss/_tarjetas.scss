@@ -1,0 +1,66 @@
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:$colorBlanco;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    margin: auto;
+    cursor:pointer;
+}
+.card:hover{
+    box-shadow: 0 5px 15px $colorSecundario;
+    transform: translateY(-15px);
+}
+.card .head{
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+.card .head .circle{
+    position:absolute;
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    background: $colorSecundario;
+    bottom: 0;
+}
+.card .head .img{
+    width: auto;
+    height: 150px;
+    position: absolute;
+    background: $colorBlanco;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left:50%;
+    transform: translate(-50%);
+}
+.card .head .img img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card .description{
+    height: 100%;
+    width: auto;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6,74,76,.18);
+    text-align: center;
+}
+.card .description h3{
+    margin-top: 50px;
+    color:$colorNegro;
+}
+.card .description p{
+    color:$colorNegro;
+    margin-top: 20px;
+    font-size: 15px;
+}
+#tarjeta{
+    margin-top: 20px;
+}
+
+

@@ -1,0 +1,25 @@
+footer{
+    background-color: $colorAlt2;
+    min-height: map-get($pieDePagina,alturaMin);
+    p{
+        text-align: map-get($pieDePagina,alineadoTexto);
+        a {
+            text-decoration: map-get($pieDePagina,decoTexto);
+            color: $colorSecundario;
+            &:hover{
+                    color: $colorNegro;
+                   }
+        }  
+    } 
+} 
+#iconos {
+    i{
+        font-size: map-get($pieDePagina,tamañoFuente);
+        padding: map-get($pieDePagina,pading);
+        text-decoration: map-get($pieDePagina,decoTexto);
+        color: $colorSecundario;
+        &:hover{
+            color:$colorNegro
+        }
+    } 
+}

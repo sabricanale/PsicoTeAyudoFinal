@@ -1,0 +1,27 @@
+$colorPrimario: #f10800;
+$colorSecundario:  #6d7d91; 
+$colorAlternativo: #f0d9d1;
+$colorAlternativoTransparente: #f0d9d16e;  
+$colorAlt2:#f4efec;
+$colorBlanco: rgb(255, 255, 255);  
+$colorNegro: rgb(0, 0, 0);
+$fuenteSitio: "Josefin Sans";
+$fuenteSecundaria:"Blinker";
+$boton: (
+    ancho:auto,
+    alto:auto,
+    duracionAnimacion: 5s,
+    delayAnimacion: 2s,
+    posicion: relative,
+    decoTexto: none,
+);
+$pieDePagina: (
+    alturaMin: 100px,
+    alineadoTexto: center,
+    decoTexto: none,
+    tamañoFuente: 20px, 
+    pading: 0 8px,
+);
+
+
+

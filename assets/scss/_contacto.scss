@@ -1,0 +1,78 @@
+.form-control{
+    width: 500px;
+}    
+.form-select{
+    @extend .form-control;
+} 
+
+#navbarNav{
+    font-family: "Mohave"; //Para el navegador
+   }
+.datos{ 
+    font-family:"Julius Sans One"; //Para títulos
+    text-decoration: map-get($pieDePagina,decoTexto);
+    color: $colorSecundario;
+    &:hover{
+            color: $colorNegro;
+           }
+}  
+
+.infoContacto{
+    background-color: $colorAlt2;   
+}    
+.infoContacto h4{
+    font-size:medium;
+}
+.infoContacto a{
+    font-size: large;
+}
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .infoContacto{
+        
+        width: auto;
+        height: auto;  
+    }
+    .infoContacto h4{
+        font-size: small;
+    }
+    .infoContacto a{
+        font-size: small;
+    }
+    .form-control{
+        width: 300px;
+    }  
+}
+@media (max-width:616px){
+    .form-label{
+        display: flex;
+        justify-content: end; 
+    }
+    .form-control{
+        display: flex;
+        justify-content: end !important;
+    }
+    .infoContacto{
+        display: inline-block;
+    } 
+    .infoContacto a{
+        font-size: medium;
+    }}
+@media (max-width:1320px){
+    .form-label{
+        display: flex;
+        justify-content: end; 
+    }
+    .form-control{
+        display: flex;
+        justify-content: end !important;
+    }
+  
+    .infoContacto a{
+        font-size: medium;
+    }
+}
+
